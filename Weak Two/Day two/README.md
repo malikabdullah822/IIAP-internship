@@ -13,29 +13,3 @@ Day 2 of Week 2 focuses on advanced JavaScript control structures and Document O
 
 ---
 
-## Code Files Reference
-
-### 1. HTML Code (`index.html`)
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Airport IT Internship - Week 2: Day 2</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <h1 id="main-title">Airport Terminal Operations</h1>
-    <p id="status-display">System status pending check...</p>
-
-    <button id="action-btn">Run Diagnostics</button>
-
-    <div class="gate-status">Gate 1: Standby</div>
-    <div class="gate-status">Gate 2: Standby</div>
-    <div class="gate-status">Gate 3: Standby</div>
-
-    <script src="script.js"></script>
-</body>
-</html>
