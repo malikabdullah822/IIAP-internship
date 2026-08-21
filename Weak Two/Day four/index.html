@@ -1,0 +1,61 @@
+<!-- HTML5 document type declaration bata rahi hai ke yeh modern HTML hai -->
+<!DOCTYPE html>
+
+<!-- HTML root element shuru ho raha hai aur language English set hai -->
+<html lang="en">
+
+<!-- <head> section jismein page ki metadata aur styles link hote hain -->
+<head>
+    <!-- Character encoding UTF-8 set ki hai taake saare characters theek display hon -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive view port set kar rahay hain taake mobile aur desktop par screen theek fit aaye -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab ka title set kar rahay hain -->
+    <title>Airport IT Internship - Week 2: Day 4</title>
+
+    <!-- External CSS file ko is HTML page ke sath link kar rahay hain -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- <body> section jahan page ka visible content banta hai -->
+<body>
+
+    <!-- Aik main container div banaya hai jo poore form ko center aur box design dega -->
+    <div class="form-container">
+        
+        <!-- Dashboard ka main heading -->
+        <h2>Airport Staff Signup Dashboard</h2>
+        
+        <!-- Signup Form jo data collect karega aur submit event trigger karega -->
+        <form id="signup-form">
+            
+            <!-- Pehla input group (Username ke liye) -->
+            <div class="input-group">
+                <!-- Label jo bata raha hai ke yahan kya enter karna hai -->
+                <label>Staff Username:</label>
+                <!-- Text input field jahan user apna naam likhega -->
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+
+            <!-- Doosra input group (Password ke liye) -->
+            <div class="input-group">
+                <!-- Password label -->
+                <label>Security Password:</label>
+                <!-- Password input field jahan text hidden (dots) dikhega -->
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+
+            <!-- Form submit karne wala button -->
+            <button type="submit" id="submit-btn">Register Staff</button>
+        </form>
+
+        <!-- Paragraph element jahan validation ka success ya error message show hoga -->
+        <p id="feedback-msg"></p>
+    </div>
+
+    <!-- External JavaScript file ko body ke bilkul end mein link kar rahay hain -->
+    <script src="script.js"></script>
+</body>
+</html>

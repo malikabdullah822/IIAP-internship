@@ -1,0 +1,72 @@
+/* Poore web page (body) ki styling */
+body {
+    font-family: Arial, sans-serif;      /* Standard clean font set kiya hai */
+    background-color: #f4f6f9;           /* Halka grayish-blue background color */
+    display: flex;                       /* Flexbox enable kar rahay hain elements ko align karne ke liye */
+    justify-content: center;             /* Content ko horizontally center mein laane ke liye */
+    align-items: center;                 /* Content ko vertically center mein laane ke liye */
+    height: 100vh;                       /* Poori screen ki height (100% viewport height) cover kare */
+    margin: 0;                           /* Default margin khatam kar rahay hain */
+}
+
+/* Form container box ki styling */
+.form-container {
+    background: white;                   /* Box ka background safed (white) rakha hai */
+    padding: 30px;                       /* Box ke andar charon taraf se space (padding) di hai */
+    border-radius: 8px;                  /* Box ke konon (corners) ko round kiya hai */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box ke ird-gird halka sa shadow (saya) diya hai */
+    width: 320px;                        /* Box ki fixed width set ki hai */
+}
+
+/* Heading ki styling */
+h2 {
+    color: #004080;                      /* Heading ka color dark blue set kiya hai */
+    text-align: center;                  /* Heading ko center mein align kiya hai */
+    font-size: 20px;                     /* Font size 20 pixels rakha hai */
+}
+
+/* Har aik input field aur label ke group ki spacing */
+.input-group {
+    margin-bottom: 15px;                 /* Neeche ki taraf 15px ka fasla chora hai */
+}
+
+/* Label ki styling */
+label {
+    display: block;                      /* Label ko block element banaya hai taake ooper aaye */
+    margin-bottom: 5px;                  /* Label aur input field ke darmiyan thori space di hai */
+    font-weight: bold;                   /* Text ko bold kiya hai */
+    color: #333;                         /* Text ka dark gray color set kiya hai */
+}
+
+/* Input fields ki styling */
+input {
+    width: 100%;                         /* Input field container ki poori width le le */
+    padding: 8px;                        /* Andar ki taraf padding di hai */
+    box-sizing: border-box;              /* Width aur padding ko balance karne ke liye */
+    border: 1px solid #ccc;              /* Halki gray border line di hai */
+    border-radius: 4px;                  /* Konon ko halka sa round kiya hai */
+}
+
+/* Submit button ki styling */
+button {
+    width: 100%;                         /* Button poori width cover kare */
+    background-color: #007bff;           /* Button ka background blue color rakha hai */
+    color: white;                        /* Button ke text ka color safed (white) hai */
+    border: none;                        /* Default border khatam ki hai */
+    padding: 10px;                       /* Andar ki space (padding) di hai */
+    font-size: 16px;                     /* Font size 16px rakha hai */
+    cursor: pointer;                     /* Mouse hover karne par cursor hand icon ban jaye */
+    border-radius: 4px;                  /* Konon ko round kiya hai */
+}
+
+/* Button par mouse hover karne ki state */
+button:hover {
+    background-color: #0056b3;           /* Hover hone par blue color mazeed dark ho jaye ga */
+}
+
+/* Feedback message (error/success) ki styling */
+#feedback-msg {
+    text-align: center;                  /* Message center mein align ho */
+    margin-top: 15px;                    /* Ooper se 15px ka fasla ho */
+    font-weight: bold;                   /* Text bold ho */
+}
