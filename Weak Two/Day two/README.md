@@ -13,3 +13,6 @@ Day 2 of Week 2 focuses on advanced JavaScript control structures and Document O
 
 ---
 
+## Author
+* **Malik Abdullah**  
+* **Role:** IT Intern (Frontend/Backend Development) at IIAP
