@@ -1,72 +1,72 @@
-/* Poore web page (body) ki styling */
+/* Style configuration for the entire web page body */
 body {
-    font-family: Arial, sans-serif;      /* Standard clean font set kiya hai */
-    background-color: #f4f6f9;           /* Halka grayish-blue background color */
-    display: flex;                       /* Flexbox enable kar rahay hain elements ko align karne ke liye */
-    justify-content: center;             /* Content ko horizontally center mein laane ke liye */
-    align-items: center;                 /* Content ko vertically center mein laane ke liye */
-    height: 100vh;                       /* Poori screen ki height (100% viewport height) cover kare */
-    margin: 0;                           /* Default margin khatam kar rahay hain */
+    font-family: Arial, sans-serif;         /* Set a clean standard fallback font family */
+    background-color: #f4f6f9;            /* Apply a light grayish-blue background color */
+    display: flex;                          /* Enable flexbox layout to easily center child elements */
+    justify-content: center;                /* Center child elements horizontally */
+    align-items: center;                    /* Center child elements vertically */
+    height: 100vh;                          /* Force the body to cover 100% of the viewport height */
+    margin: 0;                              /* Remove default browser margin spacing */
 }
 
-/* Form container box ki styling */
+/* Styling rules for the main form container box wrapper */
 .form-container {
-    background: white;                   /* Box ka background safed (white) rakha hai */
-    padding: 30px;                       /* Box ke andar charon taraf se space (padding) di hai */
-    border-radius: 8px;                  /* Box ke konon (corners) ko round kiya hai */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Box ke ird-gird halka sa shadow (saya) diya hai */
-    width: 320px;                        /* Box ki fixed width set ki hai */
+    background: white;                      /* Give the container card a solid white background */
+    padding: 30px;                          /* Add internal spacing inside the container on all sides */
+    border-radius: 8px;                     /* Round the outer corners of the container card */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);    /* Apply a soft shadow effect around the box border */
+    width: 320px;                           /* Set a fixed pixel width for the container */
 }
 
-/* Heading ki styling */
+/* Styling rules for section headings */
 h2 {
-    color: #004080;                      /* Heading ka color dark blue set kiya hai */
-    text-align: center;                  /* Heading ko center mein align kiya hai */
-    font-size: 20px;                     /* Font size 20 pixels rakha hai */
+    color: #004080;                         /* Set a professional dark blue text color for the heading */
+    text-align: center;                     /* Center-align the heading text */
+    font-size: 20px;                        /* Define a readable font size of 20 pixels */
 }
 
-/* Har aik input field aur label ke group ki spacing */
+/* Spacing layout for individual input field and label groups */
 .input-group {
-    margin-bottom: 15px;                 /* Neeche ki taraf 15px ka fasla chora hai */
+    margin-bottom: 15px;                    /* Add a bottom margin spacing of 15px between elements */
 }
 
-/* Label ki styling */
+/* Styling for form labels */
 label {
-    display: block;                      /* Label ko block element banaya hai taake ooper aaye */
-    margin-bottom: 5px;                  /* Label aur input field ke darmiyan thori space di hai */
-    font-weight: bold;                   /* Text ko bold kiya hai */
-    color: #333;                         /* Text ka dark gray color set kiya hai */
+    display: block;                         /* Make the label a block element so it appears above the input */
+    margin-bottom: 5px;                     /* Add spacing below the label before the input field starts */
+    font-weight: bold;                      /* Make the label text bold */
+    color: #333;                            /* Set a dark gray text color for contrast */
 }
 
-/* Input fields ki styling */
+/* Styling rules for text and password input elements */
 input {
-    width: 100%;                         /* Input field container ki poori width le le */
-    padding: 8px;                        /* Andar ki taraf padding di hai */
-    box-sizing: border-box;              /* Width aur padding ko balance karne ke liye */
-    border: 1px solid #ccc;              /* Halki gray border line di hai */
-    border-radius: 4px;                  /* Konon ko halka sa round kiya hai */
+    width: 100%;                            /* Make the input field span the full width of its container */
+    padding: 8px;                           /* Add inner padding inside the input field */
+    box-sizing: border-box;                 /* Include padding and borders within the total element width */
+    border: 1px solid #ccc;                 /* Add a thin light gray border outline */
+    border-radius: 4px;                     /* Slightly round the corners of the input box */
 }
 
-/* Submit button ki styling */
+/* Styling for the form submission button */
 button {
-    width: 100%;                         /* Button poori width cover kare */
-    background-color: #007bff;           /* Button ka background blue color rakha hai */
-    color: white;                        /* Button ke text ka color safed (white) hai */
-    border: none;                        /* Default border khatam ki hai */
-    padding: 10px;                       /* Andar ki space (padding) di hai */
-    font-size: 16px;                     /* Font size 16px rakha hai */
-    cursor: pointer;                     /* Mouse hover karne par cursor hand icon ban jaye */
-    border-radius: 4px;                  /* Konon ko round kiya hai */
+    width: 100%;                            /* Make the button span the full width of the container */
+    background-color: #007bff;            /* Set a solid blue background color for the button */
+    color: white;                           /* Set the button text color to white */
+    border: none;                           /* Remove default browser button borders */
+    padding: 10px;                          /* Add inner padding for button sizing */
+    font-size: 16px;                        /* Set the font size to 16 pixels */
+    cursor: pointer;                        /* Change the cursor pointer to a hand icon on hover */
+    border-radius: 4px;                     /* Round the button corners slightly */
 }
 
-/* Button par mouse hover karne ki state */
+/* Hover state effects when the user places the mouse over the button */
 button:hover {
-    background-color: #0056b3;           /* Hover hone par blue color mazeed dark ho jaye ga */
+    background-color: #0056b3;            /* Darken the blue background color slightly on hover */
 }
 
-/* Feedback message (error/success) ki styling */
+/* Styling rules for the dynamic feedback (success or error message) paragraph */
 #feedback-msg {
-    text-align: center;                  /* Message center mein align ho */
-    margin-top: 15px;                    /* Ooper se 15px ka fasla ho */
-    font-weight: bold;                   /* Text bold ho */
+    text-align: center;                     /* Center-align the feedback text message */
+    margin-top: 15px;                       /* Add spacing above the message container */
+    font-weight: bold;                      /* Make the feedback text bold */
 }

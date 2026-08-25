@@ -2,16 +2,16 @@
 // 1. SELECTING DOM ELEMENTS
 // ==========================================
 
-// Signup form element ko select kar rahay hain
+// Select the main signup form element from the document
 const signupForm = document.querySelector("#signup-form");
 
-// Username input field ko select kar rahay hain
+// Select the username input text field element
 const usernameInput = document.querySelector("#username");
 
-// Password input field ko select kar rahay hain
+// Select the password input text field element
 const passwordInput = document.querySelector("#password");
 
-// Feedback message show karne ke liye paragraph select kar rahay hain
+// Select the feedback paragraph element to show validation messages
 const feedbackMsg = document.querySelector("#feedback-msg");
 
 
@@ -19,16 +19,18 @@ const feedbackMsg = document.querySelector("#feedback-msg");
 // 2. FUNCTIONS (Declaration & Validation logic)
 // ==========================================
 
-// Aik function declaration bana rahay hain jo validation check karega
+// Declare a reusable function to evaluate and validate user form inputs
 function validateFormInput(username, password) {
     
-    // Check karein agar username khali hai ya password 6 harf se chota hai
+    // Check if either the username or password fields are left completely empty
     if (username === "" || password === "") {
         return "Error: All fields must be filled out!"; // Return error message
     } 
+    // Check if the password length is shorter than the minimum required 6 characters
     else if (password.length < 6) {
         return "Error: Password must be at least 6 characters long!"; // Return error message
     } 
+    // If all validation rules pass successfully, return the approval message
     else {
         return "Success: Staff registration approved!"; // Return success message
     }
@@ -39,27 +41,27 @@ function validateFormInput(username, password) {
 // 3. EVENT LISTENER (Submit Event)
 // ==========================================
 
-// Form par 'submit' event listener laga rahay hain
+// Attach a submit event listener to the signup form element
 signupForm.addEventListener("submit", function(event) {
     
-    // Page ko refresh honay se rokne ke liye preventDefault use karte hain
+    // Prevent the default browser form submission refresh behavior
     event.preventDefault();
 
-    // Input fields ki current values variable mein save kar rahay hain
+    // Retrieve and trim current whitespace values from the username and password fields
     let enteredUser = usernameInput.value.trim();
     let enteredPass = passwordInput.value.trim();
 
-    // Upar banaye gaye function ko call (argument pass) kar ke result hasil kar rahay hain
+    // Call the validation function, passing the input arguments and storing the result
     let validationResult = validateFormInput(enteredUser, enteredPass);
 
-    // Result ko HTML ke andar display kar rahay hain
+    // Display the resulting validation feedback text inside the DOM element
     feedbackMsg.textContent = validationResult;
 
-    // Condition ke hisab se text ka color badal rahay hain
+    // Apply conditional text coloring depending on the result status
     if (validationResult.startsWith("Success")) {
-        feedbackMsg.style.color = "#28a745"; // Green color for success
+        feedbackMsg.style.color = "#28a745"; // Green color for success status
     } else {
-        feedbackMsg.style.color = "#d9534f"; // Red color for error
+        feedbackMsg.style.color = "#d9534f"; // Red color for error status
     }
 
 });

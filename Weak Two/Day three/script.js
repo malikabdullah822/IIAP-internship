@@ -2,13 +2,13 @@
 // 1. SELECTING DOM ELEMENTS
 // ==========================================
 
-// HTML file mein se 'click-btn' id wale button ko select karke aik constant variable mein save kar rahay hain
+// Select the action button from the HTML document and store it in a constant variable
 const clickBtn = document.querySelector("#click-btn");
 
-// HTML file mein se 'counter-display' id wale span tag ko select kar rahay hain jahan number show hoga
+// Select the counter display span element where the updated number will be shown
 const counterDisplay = document.querySelector("#counter-display");
 
-// Aik variable bana rahay hain jiska naam 'clickCount' hai aur iski shuru ki value '0' rakhi hai
+// Initialize a counter variable starting at 0 to track the total clicks
 let clickCount = 0;
 
 
@@ -16,16 +16,16 @@ let clickCount = 0;
 // 2. ADDING EVENT LISTENER (Click Event)
 // ==========================================
 
-// Button ke upar aik event listener laga rahay hain jo 'click' hone ka intezaar karega
+// Attach a click event listener to the button to listen for user interactions
 clickBtn.addEventListener("click", function() {
     
-    // Jab bhi button par click hoga, yeh line 'clickCount' ki value mein 1 ka izafa (increment) kar degi
+    // Increment the clickCount variable by 1 every time the button is clicked
     clickCount++;
 
-    // DOM ka use karke span tag ke andar ka text (`textContent`) naye update huye count se badal denge
+    // Update the text content of the display span dynamically using DOM manipulation
     counterDisplay.textContent = clickCount;
 
-    // Browser ke developer console mein aik message print karwayenge ke total kitne clicks ho chuke hain
+    // Log a status message to the browser console showing the updated check-in count
     console.log("Check-in registered! Total count: " + clickCount);
 
 });
@@ -35,16 +35,16 @@ clickBtn.addEventListener("click", function() {
 // 3. DEMONSTRATING LOOPS (While Loop)
 // ==========================================
 
-// Aik variable banaya jiski value 3 hai
+// Create a variable to represent the number of active security checkpoints
 let securityCheckpoints = 3;
 
-// Yeh 'while' loop tab tak chalega jab tak 'securityCheckpoints' ki value 0 se bari hai
+// Run the while loop as long as the checkpoints count is greater than 0
 while (securityCheckpoints > 0) {
     
-    // Loop ke har chakkar mein console par yeh message print hoga
+    // Print the active status of the current security checkpoint to the console
     console.log("Security checkpoint " + securityCheckpoints + " is active.");
     
-    // Har chakkar ke baad value mein 1 minus hoga taake aik waqt aaye aur loop khatam ho jaye
+    // Decrement the checkpoint count by 1 to prevent an infinite loop
     securityCheckpoints--; 
 }
 
@@ -53,15 +53,15 @@ while (securityCheckpoints > 0) {
 // 4. LOOPING OVER ARRAYS (List Loop)
 // ==========================================
 
-// Aik array (list) bana rahay hain jismein mukhtalif terminal gates ke naam store hain
+// Create an array list storing multiple terminal gate identifiers
 let terminalGates = ["Gate A", "Gate B", "Gate C"];
 
-// Console par aik heading print karwa rahay hain
+// Print a section heading to the console
 console.log("--- Scanning Terminal Gates ---");
 
-// Array ke andar mojood har aik gate par loop chalane ke liye '.forEach()' method use kar rahay hain
+// Iterate through each gate item inside the array using the forEach method
 terminalGates.forEach(function(gate, index) {
     
-    // Har gate ka index number aur uska naam utha kar console par status print karwa rahay hain
+    // Output the specific index number and gate name operational status to the console
     console.log("Index " + index + ": " + gate + " status is operational.");
 });

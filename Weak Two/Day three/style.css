@@ -2,12 +2,12 @@
    1. GLOBAL BODY STYLING
    ========================================== */
 
-/* Poore web page (body) par font set kar rahay hain taake text saaf dikhay */
+/* Set the default font family and background style for the entire web page */
 body {
-    font-family: Arial, sans-serif; /* Standard font family */
-    background-color: #eef2f7;      /* Page ka halka grayish-blue background color */
-    text-align: center;             /* Saara text center (darmiyan) mein align kar rahay hain */
-    padding-top: 60px;              /* Page ke ooper se 60 pixels ki jagah (space) chor rahay hain */
+    font-family: Arial, sans-serif;      /* Standard fallback font family */
+    background-color: #eef2f7;         /* Light grayish-blue background color */
+    text-align: center;                /* Center-align all text content on the page */
+    padding-top: 60px;                 /* Add top spacing of 60 pixels */
 }
 
 
@@ -15,15 +15,15 @@ body {
    2. HEADINGS AND TEXT STYLING
    ========================================== */
 
-/* Main heading (<h1>) ki styling */
+/* Styling rules for the main heading element */
 h1 {
-    color: #003366;                 /* Heading ka dark blue color set kar rahay hain */
+    color: #003366;                    /* Dark blue color theme for headings */
 }
 
-/* Paragraph (p) tags ki styling */
+/* Styling rules for standard paragraph elements */
 p {
-    font-size: 20px;                /* Text ka size 20 pixels bara kar rahay hain */
-    font-weight: bold;              /* Text ko bold (motay lafzon mein) kar rahay hain */
+    font-size: 20px;                   /* Increase font size to 20 pixels */
+    font-weight: bold;                 /* Apply bold weight to paragraph text */
 }
 
 
@@ -31,10 +31,10 @@ p {
    3. COUNTER DISPLAY STYLING
    ========================================== */
 
-/* Span tag (jahan counter ka number show hota hai) ki styling */
+/* Styling rules for the dynamic counter number span element */
 #counter-display {
-    color: #d9534f;                 /* Number ka color red/orange set kar rahay hain */
-    font-size: 28px;                /* Number ka size mazeed bara (28px) kar rahay hain */
+    color: #d9534f;                    /* Red-orange accent color for the counter text */
+    font-size: 28px;                   /* Larger font size to highlight the numbers */
 }
 
 
@@ -42,19 +42,19 @@ p {
    4. BUTTON STYLING & HOVER EFFECT
    ========================================== */
 
-/* Interactive button ki styling */
+/* Styling rules for interactive buttons */
 button {
-    background-color: #0275d8;      /* Button ka background blue color rakha hai */
-    color: white;                   /* Button ke andar likha hua text safed (white) hoga */
-    border: none;                   /* Button ki default border line khatam kar rahay hain */
-    padding: 12px 24px;             /* Button ke andar text ke ird-gird padding (space) de rahay hain */
-    font-size: 16px;                /* Button ke text ka size 16px hai */
-    cursor: pointer;                /* Jab mouse button ke ooper jaye toh cursor hath (pointer) ban jaye */
-    border-radius: 6px;             /* Button ke konon (corners) ko halka sa gol (rounded) kar rahay hain */
-    margin-top: 15px;               /* Button ke ooper 15px ka fasla de rahay hain */
+    background-color: #0275d8;         /* Solid blue background color */
+    color: white;                      /* White text color for high contrast */
+    border: none;                      /* Remove default browser button borders */
+    padding: 12px 24px;                /* Inner padding surrounding the text */
+    font-size: 16px;                   /* Readable font size for the button text */
+    cursor: pointer;                   /* Change cursor to a pointer hand on hover */
+    border-radius: 6px;                /* Slightly round the corners of the button */
+    margin-top: 15px;                  /* Add spacing above the button element */
 }
 
-/* Jab user mouse ko button ke ooper le kar jaye (Hover state) */
+/* Hover state styling when the user places the mouse over the button */
 button:hover {
-    background-color: #025aa5;      /* Mouse anay par button ka blue color thora mazeed dark ho jaye ga */
+    background-color: #025aa5;         /* Darken the blue background color slightly on hover */
 }

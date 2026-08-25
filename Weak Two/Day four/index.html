@@ -1,61 +1,61 @@
-<!-- HTML5 document type declaration bata rahi hai ke yeh modern HTML hai -->
+<!-- Declare the document type as HTML5 to ensure modern standard rendering -->
 <!DOCTYPE html>
 
-<!-- HTML root element shuru ho raha hai aur language English set hai -->
+<!-- Root HTML element starting with English language configuration -->
 <html lang="en">
 
-<!-- <head> section jismein page ki metadata aur styles link hote hain -->
+<!-- Head section containing metadata, page title, and external style sheets -->
 <head>
-    <!-- Character encoding UTF-8 set ki hai taake saare characters theek display hon -->
+    <!-- Set character encoding to UTF-8 for proper text and symbol display -->
     <meta charset="UTF-8">
 
-    <!-- Responsive view port set kar rahay hain taake mobile aur desktop par screen theek fit aaye -->
+    <!-- Configure the viewport for responsive scaling across mobile and desktop devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Browser tab ka title set kar rahay hain -->
+    <!-- Define the title displayed in the browser tab -->
     <title>Airport IT Internship - Week 2: Day 4</title>
 
-    <!-- External CSS file ko is HTML page ke sath link kar rahay hain -->
+    <!-- Link the external CSS styling sheet to this HTML document -->
     <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- <body> section jahan page ka visible content banta hai -->
+<!-- Body section containing all visible elements rendered on the web page -->
 <body>
 
-    <!-- Aik main container div banaya hai jo poore form ko center aur box design dega -->
+    <!-- Main container wrapper to center the form and provide a card UI design -->
     <div class="form-container">
         
-        <!-- Dashboard ka main heading -->
+        <!-- Main dashboard heading -->
         <h2>Airport Staff Signup Dashboard</h2>
         
-        <!-- Signup Form jo data collect karega aur submit event trigger karega -->
+        <!-- Signup form element to collect user input and trigger submission events -->
         <form id="signup-form">
             
-            <!-- Pehla input group (Username ke liye) -->
+            <!-- First input group container for the username field -->
             <div class="input-group">
-                <!-- Label jo bata raha hai ke yahan kya enter karna hai -->
+                <!-- Label describing the expected input field value -->
                 <label>Staff Username:</label>
-                <!-- Text input field jahan user apna naam likhega -->
+                <!-- Text input field where the user enters their username -->
                 <input type="text" id="username" placeholder="Enter username">
             </div>
 
-            <!-- Doosra input group (Password ke liye) -->
+            <!-- Second input group container for the password field -->
             <div class="input-group">
-                <!-- Password label -->
+                <!-- Label describing the password field -->
                 <label>Security Password:</label>
-                <!-- Password input field jahan text hidden (dots) dikhega -->
+                <!-- Password input field masking characters with hidden dots -->
                 <input type="password" id="password" placeholder="Enter password">
             </div>
 
-            <!-- Form submit karne wala button -->
+            <!-- Form submission button element -->
             <button type="submit" id="submit-btn">Register Staff</button>
         </form>
 
-        <!-- Paragraph element jahan validation ka success ya error message show hoga -->
+        <!-- Paragraph element designated to display validation success or error messages -->
         <p id="feedback-msg"></p>
     </div>
 
-    <!-- External JavaScript file ko body ke bilkul end mein link kar rahay hain -->
+    <!-- Link the external JavaScript script file right before the body closes -->
     <script src="script.js"></script>
 </body>
 </html>
