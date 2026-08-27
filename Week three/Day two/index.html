@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive scaling across different viewports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page shown in browser tab -->
+    <title>Week 3 - Day 2: Arrow Functions & Semantic Structure</title>
+    <!-- Link external CSS stylesheet for styling the layout -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Header Element -->
+    <header class="site-header">
+        <h1>Islamabad Airport Authority</h1>
+        <p>Terminal Operations & Flight Status Portal</p>
+    </header>
+
+    <!-- Semantic Main Content Element -->
+    <main class="site-main">
+        <div class="dashboard-card">
+            <h2>Arrow Functions Dashboard</h2>
+            <p class="subtitle">Week 3 - Day 2 Task: Modern ES6 Refactoring</p>
+
+            <!-- Input section for interactive testing -->
+            <div class="input-section">
+                <select id="flightSelect">
+                    <option value="PK-701">PK-701</option>
+                    <option value="PK-702">PK-702</option>
+                    <option value="PK-703">PK-703</option>
+                    <option value="PK-704">PK-704</option>
+                    <option value="PA-201">PA-201</option>
+                    <option value="PA-202">PA-202</option>
+                </select>
+                <button id="checkBtn">Check Flight Status</button>
+            </div>
+
+            <!-- Dynamic announcement result box -->
+            <div id="announcementBox" class="announcement-box hidden">
+                <!-- JavaScript arrow function result will load here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Semantic Footer Element -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Islamabad International Airport. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link external JavaScript file containing arrow functions logic -->
+    <script src="script.js"></script>
+</body>
+</html>
