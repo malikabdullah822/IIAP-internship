@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding for document -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive scaling across different viewports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page shown in browser tab -->
+    <title>Week 3 - Day 4: Destructuring & All Flights Display</title>
+    <!-- Link external CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Header Element -->
+    <header class="site-header">
+        <h1>Islamabad International Airport</h1>
+        <p>Destructuring & Flight Manifest Dashboard</p>
+    </header>
+
+    <!-- Semantic Main Content Element -->
+    <main class="site-main">
+        <div class="dashboard-card">
+            <h2>Flight Search & Destructuring</h2>
+            <p class="subtitle">Search a flight or view all manifest entries</p>
+
+            <!-- Input group for searching specific flights -->
+            <div class="input-group">
+                <input type="text" id="flightInput" placeholder="e.g. PK-701">
+                <button id="searchBtn">Search</button>
+                <button id="showAllBtn">Show All</button>
+            </div>
+
+            <!-- Result or flight list container -->
+            <div id="flightContainer" class="flight-container">
+                <!-- Data injected via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Semantic Footer Element -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Islamabad International Airport. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
