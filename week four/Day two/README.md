@@ -32,4 +32,4 @@ Follow these steps to run the project on your local machine:
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/your-username/IIAP-internship.git](https://github.com/your-username/IIAP-internship.git)
+   git clone [https://github.com/malikabdullah822/IIAP-internship.git](https://github.com/malikabdullah822/IIAP-internship.git)
