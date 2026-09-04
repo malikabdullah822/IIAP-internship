@@ -1,0 +1,108 @@
+/* General styling for the application layout */
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Header text alignment and color */
+.app-header {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1b262c;
+}
+
+/* Filter container styling */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Search input field styling */
+.search-input {
+  width: 350px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Focus effect on search input */
+.search-input:focus {
+  border-color: #3282b8;
+}
+
+/* Table wrapper styling */
+.table-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Main flights table layout */
+.flights-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* Table header cells */
+.flights-table th {
+  background-color: #0f4c81;
+  color: white;
+  padding: 12px 15px;
+  font-size: 14px;
+}
+
+/* Table data cells */
+.flights-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Row hover effect */
+.flight-row:hover {
+  background-color: #f1f3f5;
+}
+
+/* Status badge base design */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 11px;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Green badge for on-time flights */
+.status-badge.on {
+  background-color: #28a745;
+}
+
+/* Red badge for delayed flights */
+.status-badge.delayed {
+  background-color: #dc3545;
+}
+
+/* Orange badge for boarding flights */
+.status-badge.boarding {
+  background-color: #fd7e14;
+}
+
+/* No results fallback row styling */
+.no-results {
+  text-align: center;
+  color: #777;
+  padding: 20px;
+  font-style: italic;
+}
