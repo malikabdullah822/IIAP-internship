@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive scaling across different viewports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page shown in browser tab -->
+    <title>Week 3 - Day 3: Arrays, Objects & Responsive Styling</title>
+    <!-- Link external CSS stylesheet for styling the layout -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Header Element -->
+    <header class="site-header">
+        <h1>Islamabad International Airport</h1>
+        <p>Advanced Flight Management Dashboard</p>
+    </header>
+
+    <!-- Semantic Main Content Element -->
+    <main class="site-main">
+        <div class="dashboard-card">
+            <h2>Flight Schedule & Filter</h2>
+            <p class="subtitle">Week 3 - Day 3 Task: Arrays, Objects & Media Queries</p>
+
+            <!-- Action buttons to test array methods like filter and map -->
+            <div class="button-group">
+                <button id="showAllBtn">Show All Flights</button>
+                <button id="filterActiveBtn">Filter Active Flights</button>
+            </div>
+
+            <!-- Container where dynamic flight cards will be injected -->
+            <div id="flightContainer" class="flight-container">
+                <!-- JavaScript will populate array and object data here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Semantic Footer Element -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Islamabad International Airport. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link external JavaScript file containing data and array methods logic -->
+    <script src="script.js"></script>
+</body>
+</html>

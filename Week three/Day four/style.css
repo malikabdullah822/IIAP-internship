@@ -1,0 +1,120 @@
+/* Reset default margins and set background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style header */
+.site-header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+
+.site-header p {
+    margin: 0;
+    font-size: 13px;
+    color: #b0c4de;
+}
+
+/* Style main content area */
+.site-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Central card styling */
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Input group layout */
+.input-group {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+button:hover {
+    background-color: #003d82;
+}
+
+/* Flight container holding list of cards */
+.flight-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    margin-top: 15px;
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+/* Individual flight card styling */
+.flight-card {
+    background: #f9f9f9;
+    border-left: 4px solid #0056b3;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* Style footer */
+.site-footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}

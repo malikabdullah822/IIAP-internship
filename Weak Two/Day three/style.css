@@ -1,0 +1,60 @@
+/* ==========================================
+   1. GLOBAL BODY STYLING
+   ========================================== */
+
+/* Set the default font family and background style for the entire web page */
+body {
+    font-family: Arial, sans-serif;      /* Standard fallback font family */
+    background-color: #eef2f7;         /* Light grayish-blue background color */
+    text-align: center;                /* Center-align all text content on the page */
+    padding-top: 60px;                 /* Add top spacing of 60 pixels */
+}
+
+
+/* ==========================================
+   2. HEADINGS AND TEXT STYLING
+   ========================================== */
+
+/* Styling rules for the main heading element */
+h1 {
+    color: #003366;                    /* Dark blue color theme for headings */
+}
+
+/* Styling rules for standard paragraph elements */
+p {
+    font-size: 20px;                   /* Increase font size to 20 pixels */
+    font-weight: bold;                 /* Apply bold weight to paragraph text */
+}
+
+
+/* ==========================================
+   3. COUNTER DISPLAY STYLING
+   ========================================== */
+
+/* Styling rules for the dynamic counter number span element */
+#counter-display {
+    color: #d9534f;                    /* Red-orange accent color for the counter text */
+    font-size: 28px;                   /* Larger font size to highlight the numbers */
+}
+
+
+/* ==========================================
+   4. BUTTON STYLING & HOVER EFFECT
+   ========================================== */
+
+/* Styling rules for interactive buttons */
+button {
+    background-color: #0275d8;         /* Solid blue background color */
+    color: white;                      /* White text color for high contrast */
+    border: none;                      /* Remove default browser button borders */
+    padding: 12px 24px;                /* Inner padding surrounding the text */
+    font-size: 16px;                   /* Readable font size for the button text */
+    cursor: pointer;                   /* Change cursor to a pointer hand on hover */
+    border-radius: 6px;                /* Slightly round the corners of the button */
+    margin-top: 15px;                  /* Add spacing above the button element */
+}
+
+/* Hover state styling when the user places the mouse over the button */
+button:hover {
+    background-color: #025aa5;         /* Darken the blue background color slightly on hover */
+}

@@ -1,0 +1,61 @@
+<!-- Declare the document type as HTML5 to ensure modern standard rendering -->
+<!DOCTYPE html>
+
+<!-- Root HTML element starting with English language configuration -->
+<html lang="en">
+
+<!-- Head section containing metadata, page title, and external style sheets -->
+<head>
+    <!-- Set character encoding to UTF-8 for proper text and symbol display -->
+    <meta charset="UTF-8">
+
+    <!-- Configure the viewport for responsive scaling across mobile and desktop devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Define the title displayed in the browser tab -->
+    <title>Airport IT Internship - Week 2: Day 4</title>
+
+    <!-- Link the external CSS styling sheet to this HTML document -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Body section containing all visible elements rendered on the web page -->
+<body>
+
+    <!-- Main container wrapper to center the form and provide a card UI design -->
+    <div class="form-container">
+        
+        <!-- Main dashboard heading -->
+        <h2>Airport Staff Signup Dashboard</h2>
+        
+        <!-- Signup form element to collect user input and trigger submission events -->
+        <form id="signup-form">
+            
+            <!-- First input group container for the username field -->
+            <div class="input-group">
+                <!-- Label describing the expected input field value -->
+                <label>Staff Username:</label>
+                <!-- Text input field where the user enters their username -->
+                <input type="text" id="username" placeholder="Enter username">
+            </div>
+
+            <!-- Second input group container for the password field -->
+            <div class="input-group">
+                <!-- Label describing the password field -->
+                <label>Security Password:</label>
+                <!-- Password input field masking characters with hidden dots -->
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+
+            <!-- Form submission button element -->
+            <button type="submit" id="submit-btn">Register Staff</button>
+        </form>
+
+        <!-- Paragraph element designated to display validation success or error messages -->
+        <p id="feedback-msg"></p>
+    </div>
+
+    <!-- Link the external JavaScript script file right before the body closes -->
+    <script src="script.js"></script>
+</body>
+</html>

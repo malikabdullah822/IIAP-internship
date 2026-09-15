@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding for document -->
+    <meta charset="UTF-8">
+    <!-- Ensure responsive scaling across mobile and desktop viewports -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Define the title of the web page shown in browser tab -->
+    <title>Week 3 - Day 5: Final Polish & Review Dashboard</title>
+    <!-- Link external CSS stylesheet for design -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Semantic Header Element -->
+    <header class="site-header">
+        <h1>Islamabad International Airport</h1>
+        <p>Terminal Management System - Final Review Portal</p>
+    </header>
+
+    <!-- Semantic Main Content Element -->
+    <main class="site-main">
+        <div class="dashboard-card">
+            <h2>Flight Operations Hub</h2>
+            <p class="subtitle">Week 3 Final Polish, Filtering & Bug Fixes</p>
+
+            <!-- Search and control input group -->
+            <div class="control-panel">
+                <input type="text" id="searchInput" placeholder="Search flight (e.g. PK-701)">
+                <button id="searchBtn">Search</button>
+                <button id="resetBtn">Reset All</button>
+            </div>
+
+            <!-- Dynamic container where flight cards will be injected -->
+            <div id="flightContainer" class="flight-container">
+                <!-- Data populated dynamically via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Semantic Footer Element -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Islamabad International Airport. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link external JavaScript file containing polished logic -->
+    <script src="script.js"></script>
+</body>
+</html>

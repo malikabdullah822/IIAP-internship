@@ -1,0 +1,233 @@
+/* Import Google Fonts Inter for clean typography styling */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global reset rules for margins, padding, and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Body layout configuration for absolute centering and mobile overflow prevention */
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f5f9;
+  overflow-x: hidden;
+}
+
+/* Main centered responsive container styling */
+.portal-container {
+  width: 92%;
+  max-width: 650px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border: 1px solid #cbd5e1;
+}
+
+/* Portal header title typography styling */
+.portal-title {
+  text-align: center;
+  color: #0f172a;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* Portal subtitle description styling */
+.portal-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 18px;
+}
+
+/* Success feedback alert banner styling */
+.success-banner {
+  background-color: #ecfdf5;
+  color: #047857;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 14px;
+  border: 1px solid #a7f3d0;
+}
+
+/* Error feedback alert banner styling */
+.error-banner {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 14px;
+  border: 1px solid #fecaca;
+}
+
+/* Form and directory section box wrapper styling */
+.portal-form,
+.directory-section {
+  background-color: #f8fafc;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+/* Headings inside form and directory sections */
+.form-heading,
+.directory-section h3 {
+  font-size: 15px;
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Input group container styling */
+.input-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Label element styling for form inputs */
+.input-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+/* Input text fields and select dropdown styling */
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 13px;
+  background-color: #ffffff;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Focus state styling for inputs and select elements */
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Read-only department input styling */
+.readonly-input {
+  background-color: #f1f5f9 !important;
+  color: #64748b !important;
+  cursor: not-allowed;
+}
+
+/* Main submit button styling */
+.submit-btn {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #2563eb;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for submit button */
+.submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Unordered list styling for user directory */
+.user-list {
+  list-style: none;
+  width: 100%;
+}
+
+/* Individual user record card styling */
+.user-card {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+/* User name text styling */
+.user-name {
+  font-size: 13px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* User details metadata text styling */
+.user-details {
+  font-size: 11px;
+  color: #64748b;
+  margin-top: 2px;
+}
+
+/* Action buttons wrapper container */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* Edit action button styling */
+.edit-btn {
+  background-color: #d97706;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Delete action button styling */
+.delete-btn {
+  background-color: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Empty data placeholder text styling */
+.no-data {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+  padding: 12px 0;
+}

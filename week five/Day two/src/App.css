@@ -1,0 +1,331 @@
+/* Task / Topic: Import modern font family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Task / Topic: Global Reset and Box Sizing Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Task / Topic: Keyframes for smooth fade-in and slide-up animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Task / Topic: Keyframes for notification banner slide down animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Task / Topic: Main Portal Container Layout Styling with modern gradient shadow */
+.portal-container {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeInUp 0.5s ease-out;
+  border: 1px solid #e2e8f0;
+}
+
+/* Task / Topic: Application Header Title Styling */
+.portal-title {
+  text-align: center;
+  color: #0f172a;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+/* Task / Topic: Subtitle Description Styling */
+.portal-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Task / Topic: Success Banner Notification Styling with animation */
+.success-banner {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #a7f3d0;
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Task / Topic: Error Banner Notification Styling with animation */
+.error-banner {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #fecaca;
+  animation: slideDown 0.3s ease-out;
+}
+
+/* Task / Topic: Portal Form Box Styling with modern card elevation */
+.portal-form {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  margin-bottom: 30px;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Task / Topic: Form box hover elevation effect */
+.portal-form:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Task / Topic: Form Section Heading Styling */
+.form-heading {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Task / Topic: Input Group Container Styling */
+.input-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Task / Topic: Input Field Labels Styling */
+.input-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 6px;
+}
+
+/* Task / Topic: Text Input Fields and Select Dropdown Styling */
+.input-group input,
+.input-group select {
+  padding: 11px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  transition: all 0.25s ease;
+  background-color: #ffffff;
+}
+
+/* Task / Topic: Input Focus Glow and Border Ring Effect */
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+  transform: translateY(-1px);
+}
+
+/* Task / Topic: Styling for read-only input field to indicate it cannot be edited */
+.readonly-input {
+  background-color: #f1f5f9 !important;
+  color: #475569 !important;
+  cursor: not-allowed;
+  border-color: #e2e8f0 !important;
+}
+
+/* Task / Topic: Modern Submit Action Button Styling with smooth hover transition */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  color: #ffffff;
+  margin-top: 8px;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.submit-btn.save {
+  background-color: #2563eb;
+}
+
+/* Task / Topic: Submit button hover and active click animation */
+.submit-btn.save:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.3);
+}
+
+.submit-btn.save:active {
+  transform: translateY(0);
+}
+
+/* Task / Topic: Directory Records Section Styling */
+.directory-section {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e2e8f0;
+}
+
+.directory-section h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* Task / Topic: Submitted Records List Container */
+.user-list {
+  list-style: none;
+}
+
+/* Task / Topic: Individual Record Card Styling with entry animation */
+.user-card {
+  background-color: #f8fafc;
+  padding: 16px 18px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+  animation: fadeInUp 0.3s ease-out;
+}
+
+/* Task / Topic: Record card hover scale/shadow effect */
+.user-card:hover {
+  transform: translateY(-2px);
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  background-color: #ffffff;
+}
+
+/* Task / Topic: Record Name Text Styling */
+.user-name {
+  font-size: 15px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Task / Topic: Record Detailed Information Styling */
+.user-details {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* Task / Topic: Action Buttons Container for Edit and Delete */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Task / Topic: Modern Edit Button Styling with transition */
+.edit-btn {
+  background-color: #f59e0b;
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.edit-btn:hover {
+  background-color: #d97706;
+  transform: translateY(-1px);
+}
+
+/* Task / Topic: Modern Delete Button Styling with transition */
+.delete-btn {
+  background-color: #ef4444;
+  color: #ffffff;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+/* Task / Topic: Empty State Message Styling */
+.no-data {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+  padding: 24px 0;
+}
+/* Mobile Responsive Fixes */
+@media (max-width: 600px) {
+  .portal-container {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .directory-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .action-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

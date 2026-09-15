@@ -1,0 +1,298 @@
+/* Task / Topic: Import Google Fonts Inter for clean typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Task / Topic: Global Reset and Box Sizing Rules */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Task / Topic: Keyframes for smooth fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Task / Topic: Main Portal Container Layout Styling */
+.portal-container {
+  width: 100%;
+  max-width: 680px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+  animation: fadeInUp 0.4s ease-out;
+}
+
+/* Task / Topic: Portal Header Title Styling */
+.portal-title {
+  text-align: center;
+  color: #0f172a;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+/* Task / Topic: Subtitle Description Styling */
+.portal-subtitle {
+  text-align: center;
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+/* Task / Topic: Success Feedback Banner Styling */
+.success-banner {
+  background-color: #ecfdf5;
+  color: #047857;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+  border: 1px solid #a7f3d0;
+}
+
+/* Task / Topic: Error Feedback Banner Styling */
+.error-banner {
+  background-color: #fef2f2;
+  color: #b91c1c;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 16px;
+  border: 1px solid #fecaca;
+}
+
+/* Task / Topic: Form Section Card Styling */
+.portal-form {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+/* Task / Topic: Form Heading Styling */
+.form-heading {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+/* Task / Topic: Input Group Container Styling */
+.input-group {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Task / Topic: Input Label Styling */
+.input-group label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+/* Task / Topic: Text Inputs and Select Dropdown Styling */
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Task / Topic: Input Focus Effect */
+.input-group input:focus,
+.input-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+/* Task / Topic: Readonly Department Field Styling */
+.readonly-input {
+  background-color: #f1f5f9 !important;
+  color: #64748b !important;
+  cursor: not-allowed;
+}
+
+/* Task / Topic: Submit Button Styling */
+.submit-btn {
+  width: 100%;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #2563eb;
+  margin-top: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Task / Topic: Directory Records Section */
+.directory-section {
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.directory-section h3 {
+  font-size: 16px;
+  color: #1e293b;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+/* Task / Topic: User List Container */
+.user-list {
+  list-style: none;
+}
+
+/* Task / Topic: Individual Record Card Styling */
+.user-card {
+  background-color: #ffffff;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Task / Topic: Record Name and Details */
+.user-name {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.user-details {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+
+/* Task / Topic: Action Buttons Layout */
+.action-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+/* Task / Topic: Edit Button Styling */
+.edit-btn {
+  background-color: #d97706;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Task / Topic: Delete Button Styling */
+.delete-btn {
+  background-color: #dc2626;
+  color: #ffffff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Task / Topic: Empty State Text */
+.no-data {
+  text-align: center;
+  color: #94a3b8;
+  font-size: 13px;
+  padding: 16px 0;
+}
+
+/* Task / Topic: Responsive Mobile Screen Layout Fixes */
+@media (max-width: 600px) {
+  .portal-container {
+    margin: 8px;
+    padding: 12px;
+    border-radius: 8px;
+  }
+  
+  .portal-form,
+  .directory-section {
+    padding: 14px;
+  }
+  
+  .portal-title {
+    font-size: 20px;
+  }
+  
+  .portal-subtitle {
+    font-size: 11px;
+  }
+  
+  .user-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .action-buttons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  /* Task / Topic: Center align body content for mobile preview */
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #e2e8f0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Task / Topic: Fully centered responsive portal container */
+.portal-container {
+  width: 92%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 18px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid #cbd5e1;
+}
+}
+

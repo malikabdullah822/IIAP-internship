@@ -1,0 +1,134 @@
+/* Reset basic margins and establish flex layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f9;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Style semantic header */
+.site-header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0 0 5px 0;
+    font-size: 20px;
+}
+
+.site-header p {
+    margin: 0;
+    font-size: 13px;
+    color: #b0c4de;
+}
+
+/* Style semantic main content wrapper */
+.site-main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Style the central dashboard container card */
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Control panel input and button layout */
+.control-panel {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+button {
+    padding: 9px 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background-color: #003d82;
+}
+
+/* Flight card list layout */
+.flight-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    max-height: 260px;
+    overflow-y: auto;
+}
+
+/* Individual flight card styling */
+.flight-card {
+    background: #fafbfc;
+    border-left: 4px solid #0056b3;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    border-top: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+/* Style semantic footer */
+.site-footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+/* Responsive design using CSS media queries */
+@media screen and (max-width: 600px) {
+    .dashboard-card {
+        padding: 15px;
+        width: 95%;
+    }
+    .control-panel {
+        flex-direction: column;
+    }
+    button {
+        width: 100%;
+    }
+}

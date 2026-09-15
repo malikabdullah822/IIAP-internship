@@ -1,0 +1,45 @@
+/* Center all dashboard contents vertically and horizontally on the screen */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Style the main card wrapper with a clean shadow and rounded corners */
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+/* Style the main header text color and margins */
+h2 {
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+/* Style the subtitle text size and color */
+.subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Style the dynamic announcement message container box */
+.announcement-box {
+    background-color: #e6f0fa;
+    border-left: 4px solid #0056b3;
+    padding: 15px;
+    border-radius: 4px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
+}

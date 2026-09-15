@@ -1,0 +1,81 @@
+/* Reset default margins and ensure full screen width */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Header design */
+.app-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1e3d59;
+}
+
+/* Grid layout for flight cards */
+.cards-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Individual flight card styling */
+.flight-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-top: 5px solid #17b978;
+  position: relative;
+}
+
+/* Special styling for VIP cards */
+.vip-card {
+  border-top: 5px solid #ff6e40;
+}
+
+/* VIP banner styling */
+.vip-banner {
+  background-color: #ff6e40;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 4px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Status badge base style */
+.badge {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+}
+
+/* Success status badge (Green) */
+.badge-success {
+  background-color: #28a745;
+}
+
+/* Danger status badge (Red) */
+.badge-danger {
+  background-color: #dc3545;
+}
+
+/* Warning status badge (Yellow/Orange) */
+.badge-warning {
+  background-color: #ffc107;
+  color: #333;
+}

@@ -1,0 +1,52 @@
+/* Sets global typography, background color, and centers everything on the screen using Flexbox */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;              /* Soft light gray background color */
+    display: flex;                          /* Turns body into a flex container */
+    justify-content: center;                /* Centers content horizontally */
+    align-items: center;                    /* Centers content vertically */
+    height: 100vh;                          /* Forces body to take full screen height */
+    margin: 0;                              /* Removes default browser margins */
+}
+
+/* Styles the central content card wrapper */
+.card {
+    background-color: #ffffff;              /* Clean white background card surface */
+    padding: 40px;                          /* Inner spacing inside the card */
+    border-radius: 12px;                    /* Soft rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft drop-shadow effect */
+    text-align: center;                     /* Centers text alignment inside the card */
+    max-width: 400px;                       /* Restricts maximum card width */
+    width: 100%;                            /* Ensures fluid responsiveness */
+}
+
+/* Styles the main heading (H1) */
+h1 {
+    color: #0f172a;                         /* Dark professional slate heading color */
+    font-size: 1.5rem;                      /* Medium font scaling */
+    margin-bottom: 10px;                    /* Bottom spacing below the title */
+}
+
+/* Styles paragraph text */
+p {
+    color: #475569;                         /* Muted slate text color for readability */
+    margin-bottom: 20px;                    /* Bottom spacing above the button */
+}
+
+/* Styles the interactive action button */
+button {
+    background-color: #004080;              /* Professional dark blue button theme */
+    color: white;                           /* White text inside the button */
+    border: none;                           /* Removes default button borders */
+    padding: 10px 20px;                     /* Inner button spacing */
+    font-size: 1rem;                        /* Standard readable text size */
+    border-radius: 6px;                     /* Slight rounded corner effect */
+    cursor: pointer;                        /* Changes mouse cursor to a pointer on hover */
+    font-weight: bold;                      /* Makes button text bold */
+    transition: background-color 0.2s;      /* Smooth color change transition on hover */
+}
+
+/* Hover state effect when the user points their mouse over the button */
+button:hover {
+    background-color: #002d59;              /* Darkens the blue color slightly on hover */
+}

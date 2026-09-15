@@ -1,0 +1,151 @@
+/* Global body setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 0;
+    color: #333333;
+}
+
+/* FLEXBOX: Navbar layout spacing items apart */
+.navbar {
+    display: flex;                          /* Turns navbar into a flex container */
+    justify-content: space-between;         /* Pushes logo to the left and links to the right */
+    align-items: center;                    /* Centers items vertically */
+    background-color: #004080;
+    padding: 15px 40px;
+    color: white;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* FLEXBOX: Nav links container */
+.nav-links {
+    display: flex;
+    gap: 20px;                              /* Spacing between individual links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Main container alignment */
+.main-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #004080;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 30px;
+}
+
+/* Contact form card styling */
+.form-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.form-card h2 {
+    margin-top: 0;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Individual form input grouping */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+/* Input fields, select dropdown styling */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    box-sizing: border-box;                 /* Ensures padding doesn't overflow container width */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #004080;                  /* Highlights border blue on click */
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.2);
+}
+
+/* Radio buttons container using Flexbox alignment */
+.radio-group {
+    display: flex;
+    gap: 20px;
+    font-weight: normal;
+}
+
+.radio-group label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+/* Checkbox alignment layout */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #004080;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #002d59;              /* Darkens button on hover */
+}

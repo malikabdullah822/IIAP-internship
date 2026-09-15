@@ -1,0 +1,188 @@
+/* General dashboard layout styling */
+.app-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  padding: 30px 20px;
+}
+
+/* Header styling */
+.app-header {
+  text-align: center;
+  margin-bottom: 35px;
+  color: #1e3d59;
+}
+
+.app-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 26px;
+}
+
+.app-header p {
+  margin: 0;
+  color: #576574;
+  font-size: 14px;
+}
+
+/* Section block styling */
+.section-block {
+  max-width: 950px;
+  margin: 0 auto 40px auto;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.section-block h2 {
+  font-size: 18px;
+  color: #0f4c81;
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 8px;
+}
+
+/* Grid layout for flight cards */
+.cards-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Individual flight card styling */
+.flight-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 18px;
+  width: 260px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-top: 5px solid #17b978;
+  position: relative;
+}
+
+/* VIP variant border styling */
+.vip-card {
+  border-top: 5px solid #ff6e40;
+}
+
+/* VIP badge banner */
+.vip-banner {
+  background-color: #ff6e40;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 3px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.flight-card h3 {
+  margin-top: 5px;
+  margin-bottom: 12px;
+  color: #2f3640;
+  font-size: 16px;
+}
+
+.flight-card p {
+  margin: 6px 0;
+  color: #4b6584;
+  font-size: 13px;
+}
+
+/* Status container inside card */
+.status-container {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #4b6584;
+}
+
+/* Card badge styles */
+.badge {
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 11px;
+  color: white;
+}
+
+.badge-success { background-color: #28a745; }
+.badge-danger { background-color: #dc3545; }
+.badge-warning { background-color: #ffc107; color: #2f3640; }
+
+/* Filter input container */
+.filter-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 15px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 9px 12px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #3282b8;
+}
+
+/* Table container styling */
+.table-container {
+  overflow-x: auto;
+}
+
+.flights-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.flights-table th {
+  background-color: #0f4c81;
+  color: white;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.flights-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 13px;
+  color: #333;
+}
+
+.flight-row:hover {
+  background-color: #f8f9fa;
+}
+
+/* Table status badge styles */
+.table-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.status-on { background-color: #28a745; }
+.status-delayed { background-color: #dc3545; }
+.status-boarding { background-color: #fd7e14; }
+
+.no-results {
+  text-align: center;
+  color: #777;
+  padding: 15px;
+  font-style: italic;
+}

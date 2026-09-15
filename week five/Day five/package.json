@@ -1,0 +1,12 @@
+{
+  "name": "iiap-day4-mock-api",
+  "version": "1.0.0",
+  "description": "JSON-based Mock API built with Node.js simple scripts for IIAP Internship",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": ["node", "json", "api", "iiap"],
+  "author": "Abdullah",
+  "license": "MIT"
+}
